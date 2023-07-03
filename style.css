@@ -1,0 +1,100 @@
+/* PALETTE */
+:root {
+  --white: #fefefe;
+  --black: #070707;
+  --morado: #610251;
+  font-family: Helvetica, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------- GLOBAL STYLES ----------------*/
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.primario {
+  border: 1px solid rgb(254, 252, 252);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.secundario {
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/*----------------CABEZERA----------------*/
+
+.cabezera {
+  height: 500px;
+  width: auto;
+  background-color: var(--morado);
+  margin-bottom: 70px;
+}
+
+/* --------------NAVEGADOR---------------- */
+
+.menuPrincipal {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  height: 8vh;
+  width: auto;
+  padding: 0 80px;
+padding: 30px;
+}
+
+.menuPrincipal ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logo {
+  filter: invert();
+}
+
+.menuIzquierda > ul > li > a {
+  align-content: center;
+  margin-top: 8px;
+  color: var(--white);
+}
+
+.menuDerecha > ul > li > a {
+  align-content: center;
+  margin-top: 8px;
+  color: var(--white);
+}
+
+/*.menuDerecha > ul > li:nth-child(2) {
+   border: 2px solid black;
+  }     Es correcto pero estoy haciéndo con clase pues son botones y puedo llamarlos en cualquier momento*/
+
+/*
+  CODIGO CORRECTO PERO MAQUETADO EN GLOBAL Y ASÍ SOLO TENGO QUE ESPECIFICAR LA EN EL HTML
+.recuadroBlanco {
+  border: 2px solid rgb(252, 251, 251);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.recuadroOpaco {
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}*/
